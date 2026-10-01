@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Image - YOLO Object Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Object Detection Portal</a>
+        </div>
+    </nav>
+    <div class="bg-light p-5 rounded-lg m-3">
+        <h1 class="display-4">Welcome to YOLO Object Detection!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>Upload an image and see the power of AI in detecting objects with high accuracy.</p>
+    </div>
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Upload Image for Detection</h5>
+                <p class="card-text">Please select an image file and upload it to detect objects. The system will process your image and display the results with detected objects highlighted.</p>
+                <form action="/" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" class="form-control">
+                    <button type="submit" class="btn btn-primary mt-3">Upload and Detect</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

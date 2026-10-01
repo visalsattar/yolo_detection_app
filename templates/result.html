@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Processed Image - YOLO Object Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for controlling image size */
+        .img-responsive {
+            max-height: 600px; /* Set maximum image height */
+            width: auto; /* Maintain aspect ratio */
+            display: block; /* Remove default alignment */
+            margin-left: auto; /* Center the image horizontally */
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Object Detection Portal</a>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="mb-4">Detection Results</h1>
+        <div class="card">
+            <img src="{{ url_for('static', filename='predicted/' + user_image) }}" class="card-img-top img-responsive" alt="Processed Image">
+            <div class="card-body">
+                <p class="card-text">Above is your uploaded image with objects detected by our YOLO model. Each object is highlighted and labeled accordingly.</p>
+                <a href="/" class="btn btn-primary">Try Another Image</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# All weights & checkpoints anywhere in the project
+*.pt
+!models/best.pt
+
+# Training runs & Tensorboard logs
+runs/
+*.tfevents*
+
+# Uploaded and predicted cache images
+static/images/*
+!static/images/img.jpg
+static/predicted/*
+!static/predicted/.gitkeep
+
+# Environment
+venv/
+env/
+.env
